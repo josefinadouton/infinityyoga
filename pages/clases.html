@@ -6,7 +6,10 @@
     <link rel="shortcut icon" href="../img/logo2.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
     ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
+
  <title>Clases</title>
 </head>
 <body>
@@ -16,22 +19,26 @@
             <a href="/index.html">
     <img class="imglogo" src="../img/logo1.png" alt="infinity yoga"></a>
         </div>
-    
-        <nav>
-        <ul class="menu">
-            <li><a class="menu-item active" href="../pages/clases.html">Clases</a></li>
-            <li><a  class="menu-item" href="../pages/conocenos.html">Conocenos</a></li>
-            <li> <a class="menu-item" href="../pages/blog.html">Blog</a></li>
-            <li> <a class="menu-item" href="../pages/agenda.html">Agenda</a></li>
-            
-        </ul>
-        </nav>
+
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="barranav" id="barranav">
+        
+            <ul class="menu">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> 
+                <li><a class="menu-item" href="../pages/clases.html">Clases</a></li>
+                <li><a  class="menu-item" href="../pages/conocenos.html">Conocenos</a></li>
+                <li> <a class="menu-item" href="../pages/blog.html">Blog</a></li>
+                <li> <a class="menu-item" href="../pages/agenda.html">Agenda</a></li>
+            </ul>
+         </nav>
     </header> 
+
     <Main>
+        <section>
     <h2 class="titulos">Horarios clases presenciales</h2>
     <table class="table table-responsive table-bordered tablota">
        
-    <thead class="columna">
+    <thead class="columna"> 
         <tr>
             <th>Hora</th>
             <th>Lunes y Miércoles</th>
@@ -79,8 +86,10 @@
             <td>Hatha</td>
         </tr>
     </tbody>
-</table>
-        
+</table> 
+</section>
+
+      <section id="section1"> 
     <h2 class="titulos">Sobre las clases</h2>
 
     <div class="tarjetas2">
@@ -109,8 +118,8 @@
   </div>
   </div>
 
-  
-   
+  </section> 
+   <section id="section2">
 <div class="tarjetota">
     <div class="tarjetotita">
         <img src="../img/chicameditacion.jpg" alt="chicameditacion" class="tarjetotitaimg">
@@ -131,6 +140,99 @@
             La práctica regular de Pilates puede ayudar a mejorar la postura, la fuerza y la flexibilidad, reducir el dolor de espalda, mejorar la coordinación y promover una sensación general de bienestar. Es una forma efectiva y segura de ejercicio que se adapta a diferentes niveles de condición física y edad. Además, el Pilates puede complementar otras actividades físicas y deportes, ayudando a prevenir lesiones y mejorar el rendimiento atlético. </p>
     </div>
 </div>
+</section>
+
+<section class="sectionespacio" id="espacio">
+
+    <h2 class="titulos">Inscríbete a nuestras clases</h2>
+    <div class="espacios">
+  <div class="forminsc"> 
+     <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ingresa tu correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Crea una contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Guardar mis datos</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Inscribirse</button>
+      </form>
+</div>
+<div class="mapa">
+    <h3 class="estilo">Nuestro centro</h3>
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.48132438182787!2d-0.41208559981814075!3d38.379033437679716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62390644e33e47%3A0xbf18b6ede2a035ef!2sSan%20Juan%20Playa!5e0!3m2!1ses-419!2ses!4v1692117121810!5m2!1ses-419!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="formclase">
+    <h3 class="estilo">Clases Individuales</h3>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Correo</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Móvil</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid number.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Clase</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Yoga</option>
+            <option>Pilates</option>
+            <option>Meditación</option>
+          </select>
+          <div class="invalid-feedback">
+            Selecciona una clase
+          </div>
+        </div>
+       
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Te contactaremos, estás de acuerdo?
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Envíar</button>
+        </div>
+      </form>
+</div>
+
+</div>
+</section>
 </Main>
 
 
@@ -155,6 +257,7 @@
     </div>
     </div>
     </footer>
+    <script src="../main.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

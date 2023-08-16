@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./img/logo2.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
     ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
  <title>Inicio</title>
 </head>
@@ -18,11 +19,12 @@
   <div class="logo">
 <img class="imglogo" src="./img/logo1.png" alt="infinity yoga">
     </div>
-    <button class="abrir-menu">abrir</button>
-    <nav class="barranav">
+    <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+
+    <nav class="barranav" id="barranav">
         
         <ul class="menu">
-            <button class="cerrar-menu">cerrar</button> 
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> 
             <li><a class="menu-item" href="./pages/clases.html">Clases</a></li>
             <li><a  class="menu-item" href="./pages/conocenos.html">Conocenos</a></li>
             <li> <a class="menu-item" href="./pages/blog.html">Blog</a></li>
@@ -51,7 +53,7 @@
             El yoga se basa en un conjunto de prácticas que incluyen posturas físicas (asanas) y técnicas de respiración (pranayama).</p>
         </div>
        <img  class="imagen1" src="./img/yoga.jpg" alt="yoga">
-     <button class="boton1">Ver más</button>
+     <button onclick="location.href='./pages/clases.html#section1' " class="boton1">Ver más</button>
     </div>
 
 
@@ -60,7 +62,7 @@
     <h3>Meditacion</h3>
     <p class="textotarjeta">A través de diferentes técnicas, la meditación es una práctica que busca calmar la mente y llevar la atención al presente. <p></div>
        <img class="imagen1" src="./img/meditacion.jpg" alt="meditacion">
-       <button class="boton1">Ver más</button>
+       <button onclick="location.href='./pages/clases.html#section2' " class="boton1">Ver más</button>
     </div>
 
 
@@ -69,7 +71,7 @@
     <h3>Pilates</h3>
     <p class="textotarjeta">Pilates combina la respiración consciente para realizar movimientos controlados y prescisos, haciendo énfasis en la calidad del movimiento.</p></div>
        <img class="imagen1" src="./img/pilates.jpg" alt="pilates">
-       <button class="boton1">Ver más</button>
+       <button onclick="location.href='./pages/clases.html#section2' " class="boton1">Ver más</button>
     </div>
 </div>
     </section>
@@ -88,7 +90,7 @@
             <p class="textotarjeta">Disfruta de las prácticas en cualquier momento en cualquier lugar, suscribete.</p>
         </div>
         <img class="imagen1" src="./img/online.jpg" alt="modalidadonline">
-        <button class="boton1">Ver más</button>
+        <button onclick="location.href='./pages/clases.html#espacio' " class="boton1">Ver más</button>
     </div> 
 
     <div class="tarjetita">
@@ -97,7 +99,7 @@
             <p class="textotarjeta">Nuestro espacio se encuentra ubicado en el centro de la ciudad de Alicante.</p>
         </div>
         <img class="imagen1" src="./img/centro.jpg" alt="modalidadpresencial">
-        <button class="boton1">Ver más</button>
+        <button onclick="location.href='./pages/clases.html#espacio' " class="boton1">Ver más</button>
     </div>
 
     <div class="tarjetita">
@@ -106,7 +108,7 @@
             <p class="textotarjeta">Prácticas personalizadas diseñadas para satisfacer tus necesidades y objetivos.</p>
         </div>
         <img class="imagen1" src="./img/individual.jpg" alt="modalidadindividual">
-        <button class="boton1">Ver más</button>
+        <button onclick="location.href='./pages/clases.html#espacio' " class="boton1">Ver más</button>
     </div>
 
     </div>
@@ -144,5 +146,6 @@
 
 
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
