@@ -1,0 +1,45 @@
+.footer {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    max-width: 100%;
+    justify-content: space-between;
+  .red {
+  padding: 5px;
+  }
+  
+  .logored {
+    width: 20px;
+    height: 20px;
+   margin-left: 10px;
+  }
+  
+  .linkred {
+    color: #C5AB9B;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  h4 { 
+    color: #C5AB9B;
+    margin: 1rem;
+  }
+  
+  .logofooter{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  }
+  
+  .imglogofooter {
+    margin: 10px;
+    display: flex;
+  
+  }
+  .logo2 {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+   
+  }
+  }

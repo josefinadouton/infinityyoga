@@ -1,0 +1,89 @@
+/*acá empieza CONOCENOS*/
+
+    .texto {
+      margin: 1rem 4rem 4rem 4rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-size: medium;
+      background-color:#909f83;
+      padding: 3rem;
+      border-radius: 30px;
+   }
+
+   .quienessomos {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:white;
+font-weight: 200;
+   }
+
+   .instructores {
+    display: grid;
+    background-color: #909f83;
+    border-radius: 30px;
+    width: 95%;
+    height: 150vh;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    grid-template-columns:repeat(4, 1fr);
+   grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+   " founder founder instructor1 instructor2"
+    "founder founder instructor3 instructor4";
+
+   }
+
+   .founder {
+  grid-area: founder;
+}
+   .instructor1  {
+    border:white 2px solid;
+    grid-area: instructor1;
+   }
+   .instructor2  {
+    border:white 2px solid;
+    border-radius: 0px 30px 0px 0px ;
+    grid-area: instructor2;
+   }
+   .instructor3  {
+    border:white 2px solid;
+    grid-area: instructor3;
+   }
+   .instructor4  {
+    border:white 2px solid;
+    grid-area: instructor4;
+    border-radius:0px 0px 30px 0px ;
+   }
+
+   .fotoinstructor{
+    width: 300px;
+    height: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex: 1;
+   }
+
+   .fotofounder {
+    width: 400px;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex: 1;
+   }
+
+.descripcioninstructor {
+    text-align: center;
+    width: 300px;
+    gap: 3rem;
+    color: white;
+  }
+
+  .instructores > div {
+    display: grid;
+    place-items: center;
+  }
+  
+
