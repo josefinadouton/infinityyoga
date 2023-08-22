@@ -1,0 +1,152 @@
+@media screen and (max-width:550px) {
+    main { background-color: white;
+    }
+    .header { 
+      display: flex;
+      background-color: #DAE2D2;
+    }
+    .tarjetita 
+    { background-color: #909f83;
+      height: 300px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 100%;}
+    .textotarjeta { color: white;
+    flex-basis: 100%;}
+    .tarjetas { flex-direction: column;}
+    h3 { flex-basis: 100%;
+    color: white;}
+    .textoprincipal { font-size: small;}
+    .titulos { color: #909f83;}
+    .section1 { display: none;}
+    .section2 {display: flex;
+    flex-direction: column;
+  position: relative;
+  }
+  .imglogo {display: block;
+}
+  
+    .barranav { position: absolute;
+      display: flex;
+      gap: 3rem;
+      opacity: 0;
+      visibility: hidden;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      align-items: end;
+      background-color: #909f83;
+      
+  }
+  
+    .menu { 
+    flex-direction: column;
+    align-items: center; 
+    
+     }
+  
+     .barranav.visible {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      background-color: #909f83;
+     }
+  
+  .cerrar-menu { display: block;
+  border: 0;
+  font-size: 2rem;}
+  
+  .abrir-menu { display: block;
+  
+  border: 0;
+  margin-right: 2rem;
+  font-size: 2rem; }
+   
+  
+  /*clases*/
+  .table-responsive {
+    margin-left: 2rem;
+  }
+  
+  .tarjetas2 {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+  
+  .tarjetota {
+    flex-direction: column;
+  
+  }
+  .tarjetita2 { 
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .tarjetotita { 
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+   /* width: 250px;*/
+  } 
+  .sectionespacio {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+  }
+  
+  .forminsc {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .formclase {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .mapa {
+      flex-direction: column;
+      flex-basis: 100px;
+      display: flex;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+  /*footer*/ 
+  .footer {display: grid;}
+  .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+  }
+   .footer .imglogofooter {
+    display: none;
+  }
+   
+
+  /*agenda*/ 
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+.dia-sem {
+  display: none;
+}
+
+.dia-disable {
+  display: none;
+}
+
+/*conocenos*/ 
+
+.instructores {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.fotofounder {
+ border-radius: 30px  30px 0px 0px;}
+}
