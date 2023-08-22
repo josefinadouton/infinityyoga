@@ -1,137 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700;900&display=swap");
-@media screen and (max-width: 550px) {
-  main {
-    background-color: white;
-  }
-  .header {
-    display: flex;
-    background-color: #DAE2D2;
-  }
-  .tarjetita {
-    background-color: #909f83;
-    height: 300px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    flex-basis: 100%;
-  }
-  .textotarjeta {
-    color: white;
-    flex-basis: 100%;
-  }
-  .tarjetas {
-    flex-direction: column;
-  }
-  h3 {
-    flex-basis: 100%;
-    color: white;
-  }
-  .textoprincipal {
-    font-size: small;
-  }
-  .titulos {
-    color: #909f83;
-  }
-  .section1 {
-    display: none;
-  }
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .imglogo {
-    display: block;
-  }
-  .barranav {
-    position: absolute;
-    display: flex;
-    gap: 3rem;
-    opacity: 0;
-    visibility: hidden;
-    flex-direction: column;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    align-items: end;
-    background-color: #909f83;
-  }
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-  .barranav.visible {
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-    background-color: #909f83;
-  }
-  .cerrar-menu {
-    display: block;
-    border: 0;
-    font-size: 2rem;
-  }
-  .abrir-menu {
-    display: block;
-    border: 0;
-    margin-right: 2rem;
-    font-size: 2rem;
-  }
-  /*clases*/
-  .tarjetas2 {
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-  .tarjetota {
-    flex-direction: column;
-  }
-  .tarjetita2 {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .tarjetotita {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    /* width: 250px;*/
-  }
-  .sectionespacio {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-  }
-  .forminsc {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .formclase {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .mapa {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  /*footer*/
-  .footer {
-    display: grid;
-  }
-  .grupo1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-  .footer .imglogofooter {
-    display: none;
-  }
-}
 * {
   margin: 0%;
   padding: 0%;
@@ -141,6 +9,7 @@
 
 main {
   background-color: #C5AB9B;
+  padding-bottom: 5rem;
 }
 
 .titulos {
@@ -239,14 +108,12 @@ h2 {
   padding: 20px;
 }
 
-.imgen1 {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
+.imagen1 {
   width: 100%;
-  flex: 1;
   display: block;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .textotarjeta {
@@ -263,7 +130,6 @@ h2 {
   gap: 10px;
   flex: 1;
   max-width: 100%;
-  height: 750px;
   position: relative;
   flex-basis: 100%;
   border-radius: 30px;
@@ -276,6 +142,7 @@ h2 {
 }
 
 h3 {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,8 +184,8 @@ h3 {
 
 .tarjetita2img {
   width: 200px;
-  height: 250px;
-  padding: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 2rem;
   max-width: 100%;
 }
@@ -543,6 +410,7 @@ tr {
 
 .founder {
   grid-area: founder;
+  border-color: #fafafa;
 }
 
 .instructor1 {
@@ -603,4 +471,246 @@ tr {
   background-color: #AFACBE;
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+  align-items: center;
+}
+
+.table-responsive {
+  width: 80%;
+  margin-left: 8rem;
+}
+
+.calendar-contenedor {
+  max-width: 1200px;
+  background-color: antiquewhite;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+.header-calendar {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #C5AB9B;
+}
+
+.header-calendar p {
+  color: #C5AB9B;
+}
+
+.calendar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, minmax(120px, 1fr));
+  grid-auto-rows: 120px;
+  grid-template-rows: 50px;
+}
+
+.dia {
+  color: #C5AB9B;
+  border-right: 1px solid #C5AB9B;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #C5AB9B;
+}
+
+.dia-sem {
+  color: #C5AB9B;
+  text-align: center;
+  border-bottom: 1px solid #C5AB9B;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.dia:nth-of-type(7n + 7) {
+  border-right: none;
+}
+
+/*.dia:nth-of-type(n + 1):nth-of-type(-n + 7){
+    background-color: aqua;
+    grid-row: 2;
+}*/
+.dia-disable {
+  background-color: gainsboro;
+}
+
+.evento {
+  border-left: 3px solid #fafafa;
+  font-weight: bolder;
+}
+
+.evento-retiro {
+  background-color: #909f83;
+  color: #fafafa;
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.evento-master {
+  background-color: #909f83;
+  color: #fafafa;
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.evento-jornada {
+  background-color: #909f83;
+  color: #fafafa;
+  grid-column: 3;
+  grid-row: 5;
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    background-color: white;
+  }
+  .header {
+    display: flex;
+    background-color: #DAE2D2;
+  }
+  .tarjetita {
+    background-color: #909f83;
+    height: 300px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 100%;
+  }
+  .textotarjeta {
+    color: white;
+    flex-basis: 100%;
+  }
+  .tarjetas {
+    flex-direction: column;
+  }
+  h3 {
+    flex-basis: 100%;
+    color: white;
+  }
+  .textoprincipal {
+    font-size: small;
+  }
+  .titulos {
+    color: #909f83;
+  }
+  .section1 {
+    display: none;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .imglogo {
+    display: block;
+  }
+  .barranav {
+    position: absolute;
+    display: flex;
+    gap: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    align-items: end;
+    background-color: #909f83;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barranav.visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background-color: #909f83;
+  }
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+  }
+  .abrir-menu {
+    display: block;
+    border: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+  /*clases*/
+  .table-responsive {
+    margin-left: 2rem;
+  }
+  .tarjetas2 {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+  .tarjetota {
+    flex-direction: column;
+  }
+  .tarjetita2 {
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .tarjetotita {
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    /* width: 250px;*/
+  }
+  .sectionespacio {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+  }
+  .forminsc {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .formclase {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .mapa {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  /*footer*/
+  .footer {
+    display: grid;
+  }
+  .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .footer .imglogofooter {
+    display: none;
+  }
+  /*agenda*/
+  .calendar {
+    display: flex;
+    flex-direction: column;
+  }
+  .dia-sem {
+    display: none;
+  }
+  .dia-disable {
+    display: none;
+  }
+  /*conocenos*/
+  .instructores {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .fotofounder {
+    border-radius: 30px 30px 0px 0px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

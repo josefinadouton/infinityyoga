@@ -1,0 +1,82 @@
+.calendar-contenedor {
+    max-width: 1200px;
+    background-color: antiquewhite;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+
+
+}
+.header-calendar {
+    text-align: center;
+ padding: 20px 0;
+ border-bottom: 1px solid $mainColor;
+}
+
+.header-calendar p {
+    color: $mainColor;
+}
+
+.calendar {
+    display: grid;
+    width: 100%;
+grid-template-columns: repeat(7, minmax(120px, 1fr)) ;
+grid-auto-rows: 120px;
+grid-template-rows: 50px;
+}
+
+.dia {
+    color: $mainColor;
+   border-right: 1px solid $mainColor;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid $mainColor;
+}
+.dia-sem {
+    color: $mainColor;
+ text-align: center;
+ border-bottom: 1px solid $mainColor;
+ line-height: 50px;
+ font-weight: bold;
+}
+
+.dia:nth-of-type(7n + 7) {
+    border-right: none;
+}
+
+/*.dia:nth-of-type(n + 1):nth-of-type(-n + 7){
+    background-color: aqua;
+    grid-row: 2;
+}*/
+
+
+.dia-disable {
+   background-color: gainsboro;
+   
+}
+
+.evento {
+    border-left: 3px solid #fafafa;
+    font-weight: bolder;
+}
+
+.evento-retiro  {
+    background-color: $colorVerde;
+    color: #fafafa;
+   grid-column: 5 ;
+    grid-row: 3;
+}
+
+.evento-master  {
+    background-color: $colorVerde;
+    color: #fafafa;
+    grid-row: 4;
+    grid-column: 2;
+
+}
+.evento-jornada  {
+    background-color: $colorVerde;
+    color: #fafafa;
+    grid-column: 3;
+    grid-row: 5;
+}
