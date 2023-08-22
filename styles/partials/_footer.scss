@@ -1,28 +1,37 @@
 .footer {
+  display: flex;
     width: 100%;
-    display: flex;
-    background-color: white;
+    background-color: #fafafa;
     max-width: 100%;
-    justify-content: space-between;
+   /* justify-content: space-between;*/
   .red {
   padding: 5px;
   }
-  
+   .grupo1 {
+    width: 100%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+  }
   .logored {
     width: 20px;
     height: 20px;
-   margin-left: 10px;
+   margin-left: 1rem;
+   margin-right: 1rem;;
   }
   
   .linkred {
     color: #C5AB9B;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   
   h4 { 
     color: #C5AB9B;
     margin: 1rem;
+    margin-top: 2rem;
   }
   
   .logofooter{ 
@@ -30,16 +39,49 @@
   flex-wrap: wrap;
   justify-content: end;
   }
-  
+
+  .caja {
+  width: 100%;
+  height: 100%;
+ /* display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+
   .imglogofooter {
-    margin: 10px;
     display: flex;
-  
+    justify-content: end;
+    align-items: end; 
+    margin-right: 3rem;
+ margin-top: 2rem;
   }
+
   .logo2 {
     width: 150px;
     height: 150px;
-    padding: 10px;
    
   }
+ 
   }
+
+  .mb-3 {
+margin-left: 2rem;
+margin-right: 2rem;
+
+  }
+.form-label {
+  color: #C5AB9B;
+}
+  
+.form-control {
+  border-color: #C5AB9B;
+  margin-bottom: 1rem;
+  color:#AFACBE;
+}
+
+.grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+  color: #AFACBE;
+  background-color: #F3F3F3;
+}

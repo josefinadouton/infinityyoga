@@ -1,5 +1,137 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700;900&display=swap");
+@media screen and (max-width: 550px) {
+  main {
+    background-color: white;
+  }
+  .header {
+    display: flex;
+    background-color: #DAE2D2;
+  }
+  .tarjetita {
+    background-color: #909f83;
+    height: 300px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 100%;
+  }
+  .textotarjeta {
+    color: white;
+    flex-basis: 100%;
+  }
+  .tarjetas {
+    flex-direction: column;
+  }
+  h3 {
+    flex-basis: 100%;
+    color: white;
+  }
+  .textoprincipal {
+    font-size: small;
+  }
+  .titulos {
+    color: #909f83;
+  }
+  .section1 {
+    display: none;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .imglogo {
+    display: block;
+  }
+  .barranav {
+    position: absolute;
+    display: flex;
+    gap: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    align-items: end;
+    background-color: #909f83;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barranav.visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background-color: #909f83;
+  }
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+  }
+  .abrir-menu {
+    display: block;
+    border: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+  /*clases*/
+  .tarjetas2 {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+  .tarjetota {
+    flex-direction: column;
+  }
+  .tarjetita2 {
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .tarjetotita {
+    flex-basis: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    /* width: 250px;*/
+  }
+  .sectionespacio {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+  }
+  .forminsc {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .formclase {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  .mapa {
+    flex-direction: column;
+    flex-basis: 100px;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  /*footer*/
+  .footer {
+    display: grid;
+  }
+  .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .footer .imglogofooter {
+    display: none;
+  }
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -15,7 +147,10 @@ main {
   text-align: center;
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: white;
-  padding: 50px 50px 50px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 2rem;
 }
 
@@ -108,8 +243,10 @@ h2 {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
-  width: 200px;
+  width: 100%;
   flex: 1;
+  display: block;
+  height: auto;
 }
 
 .textotarjeta {
@@ -126,7 +263,7 @@ h2 {
   gap: 10px;
   flex: 1;
   max-width: 100%;
-  height: 600px;
+  height: 750px;
   position: relative;
   flex-basis: 100%;
   border-radius: 30px;
@@ -144,7 +281,6 @@ h3 {
   align-items: center;
   color: #C5AB9B;
   flex-basis: 100%;
-  padding: 1rem;
 }
 
 .infomacioncard {
@@ -168,25 +304,28 @@ h3 {
   flex-direction: column;
   gap: 5px;
   flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .textotarjeta2 {
-  padding: 10px;
+  padding: 20px;
   flex-basis: 100%;
   color: white;
+  margin: 0%;
 }
 
 .tarjetita2img {
   width: 200px;
   height: 250px;
-  margin: 20px 10px;
   padding: auto;
-  margin-left: 35px;
+  margin-top: 2rem;
   max-width: 100%;
 }
 
 .estilo {
   color: white;
+  margin: 0%;
 }
 
 tr {
@@ -203,6 +342,7 @@ tr {
 .tarjetota {
   display: flex;
   gap: 3rem;
+  margin-top: 5rem;
 }
 
 .tarjetotita {
@@ -223,7 +363,7 @@ tr {
 }
 
 .boton1 {
-  color: white;
+  color: #fafafa;
   border-radius: 2rem;
   position: absolute;
   right: 30%;
@@ -236,43 +376,96 @@ tr {
   margin-bottom: 250px;
 }
 
+.boton2 {
+  border-radius: 2rem;
+  right: 30%;
+  bottom: 10%;
+  padding: 10px 15px;
+  background-color: #AFACBE;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: none;
+  color: #fafafa;
+}
+
 .footer {
-  width: 100%;
   display: flex;
-  background-color: white;
+  width: 100%;
+  background-color: #fafafa;
   max-width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between;*/
 }
 .footer .red {
   padding: 5px;
 }
+.footer .grupo1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
 .footer .logored {
   width: 20px;
   height: 20px;
-  margin-left: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .footer .linkred {
   color: #C5AB9B;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .footer h4 {
   color: #C5AB9B;
   margin: 1rem;
+  margin-top: 2rem;
 }
 .footer .logofooter {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
 }
+.footer .caja {
+  width: 100%;
+  height: 100%;
+  /* display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
 .footer .imglogofooter {
-  margin: 10px;
   display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-right: 3rem;
+  margin-top: 2rem;
 }
 .footer .logo2 {
   width: 150px;
   height: 150px;
-  padding: 10px;
+}
+
+.mb-3 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.form-label {
+  color: #C5AB9B;
+}
+
+.form-control {
+  border-color: #C5AB9B;
+  margin-bottom: 1rem;
+  color: #AFACBE;
+}
+
+.grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+  color: #AFACBE;
+  background-color: #F3F3F3;
 }
 
 .forminsc {
@@ -410,135 +603,4 @@ tr {
   background-color: #AFACBE;
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
-}
-
-@media screen and (max-width: 550px) {
-  main {
-    background-color: white;
-  }
-  .header {
-    background-color: #C5AB9B;
-    display: flex;
-    height: 100px;
-  }
-  .tarjetita {
-    background-color: #909f83;
-    height: 300px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    flex-basis: 100%;
-  }
-  .imgen1 {
-    width: 100px;
-    height: 150px;
-  }
-  .textotarjeta {
-    color: white;
-    flex-basis: 100%;
-  }
-  .tarjetas {
-    flex-direction: column;
-  }
-  h3 {
-    flex-basis: 100%;
-    color: white;
-  }
-  .textoprincipal {
-    font-size: small;
-  }
-  .titulos {
-    color: #909f83;
-  }
-  .section1 {
-    display: none;
-  }
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .imglogo {
-    display: block;
-  }
-  .imagen1 {
-    height: 60%;
-  }
-  .header {
-    background-color: #DAE2D2;
-  }
-  .barranav {
-    position: absolute;
-    display: flex;
-    gap: 3rem;
-    opacity: 0;
-    visibility: hidden;
-    flex-direction: column;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    align-items: end;
-    background-color: #909f83;
-  }
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-  .barranav.visible {
-    visibility: visible;
-    opacity: 1;
-    z-index: 1;
-    background-color: #909f83;
-  }
-  .cerrar-menu {
-    display: block;
-    border: 0;
-    font-size: 2rem;
-  }
-  .abrir-menu {
-    display: block;
-    border: 0;
-    margin-right: 2rem;
-    font-size: 2rem;
-  }
-  /*clases*/
-  .tarjetas2 {
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-  .tarjetota {
-    flex-direction: column;
-  }
-  .tarjetita2 {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .tarjetotita {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    /* width: 250px;*/
-  }
-  .sectionespacio {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-  }
-  .forminsc {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .formclase {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .mapa {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
 }/*# sourceMappingURL=estilos.css.map */

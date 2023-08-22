@@ -3,15 +3,17 @@
     gap: 2rem; 
     padding: 20px;
    }
-.imgen1 { 
 
+.imgen1 { 
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
-    width: 200px;
+    width: 100%;
     flex: 1;
-
+    display: block;
+    height: auto;
 }
+
  .textotarjeta {
   color: #C5AB9B;
   padding: 10px;
@@ -26,7 +28,7 @@ background-color: white;
  gap: 10px;
  flex: 1;
  max-width: 100%;
- height: 600px;
+ height: 750px;
  position: relative;
  flex-basis: 100%;
  border-radius: 30px;
@@ -46,7 +48,6 @@ background-color: white;
     align-items: center;
     color: #C5AB9B;
     flex-basis:100%;
-    padding: 1rem;
    }
 
    .infomacioncard{
@@ -73,25 +74,28 @@ background-color: white;
       flex-direction: column;
       gap: 5px;
       flex-basis: 100%;
+      align-items: center;
+      justify-content: center;
       
     }
     .textotarjeta2 {
-      padding: 10px;
+    padding: 20px;
     flex-basis: 100%;
     color: white;
+    margin: 0%;
     }
   
      .tarjetita2img { 
       width: 200px;
       height: 250px;
-      margin: 20px 10px;
       padding: auto;
-      margin-left: 35px;
+      margin-top: 2rem;
       max-width: 100%;
      }
      
   .estilo{
      color: white;
+     margin: 0%;
   }
   
   tr  {
@@ -107,6 +111,7 @@ background-color: white;
    .tarjetota {
     display: flex;
     gap: 3rem;
+    margin-top: 5rem;
    
    }
   
