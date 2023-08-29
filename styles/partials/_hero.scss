@@ -8,15 +8,16 @@
     justify-content: center;
     align-items: center;
     padding-inline: 200px;
-  }
-  
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 2rem;
+
    .textoprincipal {
     color: white;
     font-size: 2rem;
-    
   }
   
   h2 {
     font-size: 1rem;
   }
-  
+}

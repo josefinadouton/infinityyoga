@@ -5,16 +5,17 @@
       display: flex;
       background-color: #DAE2D2;
     }
+   
     .tarjetita 
-    { background-color: #909f83;
-      height: 300px;
+    { 
+       height: 300px;
       box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
     flex-basis: 100%;}
     .textotarjeta { color: white;
     flex-basis: 100%;}
     .tarjetas { flex-direction: column;}
     h3 { flex-basis: 100%;
-    color: white;}
+    color: $mainColor;}
     .textoprincipal { font-size: small;}
     .titulos { color: #909f83;}
     .section1 { display: none;}

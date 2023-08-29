@@ -1,15 +1,15 @@
-.tarjetas {
+  @mixin centrado($margender, $margenizq){
+    margin-left: $margenizq;
+    margin-right: $margender;
+  }
+  
+  .tarjetas {
     display: flex;
     gap: 2rem; 
-    padding: 20px;
-   }
-
-.imagen1 { 
-    width: 100%;
-    display: block;
-    height: auto;
-    object-fit: cover;
-}
+    padding: 2rem;
+    /*margin-right: 3rem;
+    margin-left: 3rem;*/
+    @include centrado(3rem,3rem);
 
  .textotarjeta {
   color: #C5AB9B;
@@ -22,22 +22,19 @@ background-color: white;
  overflow: hidden;
  display: flex;
  flex-direction: column;
- gap: 10px;
  flex: 1;
  max-width: 100%;
  position: relative;
- flex-basis: 100%;
+flex-basis: 100%;
  border-radius: 30px;
+ transition: all 400ms ease;
+ box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
 
- }
+ } 
 
- .tarjetita:hover button {
-    background-color: #C5AB9B;
-    color: white;
-    padding:15px 50px ;
- }
+ 
 
-   h3 {
+   h2 {
 margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -49,13 +46,25 @@ margin-top: 1rem;
    .infomacioncard{
     padding: 20px 20px 20px 20px;
    }
+  }
+.tarjetita:hover .boton1 {
+    background-color: #C5AB9B;
+    color: white;
+    padding:15px 50px ;
+    transition: ease-in;
+ }
 
+ .tarjetita:hover  {
+  box-shadow: 5px 5px 20px rgb(0,0,0,0.2);
+  transform: translateY(-3%);
+}
 
    /* ACA EMPIEZA CLASES*/
 
 
 .tarjetas2 {
-    padding: 60px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     display: flex;
     gap: 30px;
   }
@@ -91,6 +100,7 @@ margin-top: 1rem;
   .estilo{
      color: white;
      margin: 0%;
+     margin-top: 1rem;
   }
   
   tr  {
@@ -105,9 +115,9 @@ margin-top: 1rem;
   
    .tarjetota {
     display: flex;
-    gap: 3rem;
     margin-top: 5rem;
-   
+   gap: 2rem;
+   @include centrado(3rem,3rem);
    }
   
    .tarjetotita {
@@ -118,12 +128,23 @@ margin-top: 1rem;
     flex: 1;
     flex-direction: column;
     gap: 3px;
-    margin-left: 60px;
-    margin-right: 60px;
     margin-bottom: 100px;
+
    }
   
   .tarjetotitaimg {
     max-width: 100%;
   }
+
+  h3 {
+    text-align: center;
+    color: $mainColor;
+    padding-top: 1rem;
+  }
+  p {
+    margin: 0%;
+  }
+
+
+
   

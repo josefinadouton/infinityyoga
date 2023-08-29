@@ -1,19 +1,6 @@
-.boton1 {
-    color: #fafafa;
-    border-radius: 2rem;
-    position: absolute;
-    right: 30%;
-    bottom: 0%;
-    padding:10px 45px ;
-    background-color: #AFACBE; 
-    border-radius: 20px;
-    font-size: 1rem;
-    border: none;
-    margin-bottom: 250px;
-  }
-  
+
   .boton2 {
-    border-radius: 2rem;
+    
     right: 30%;
     bottom: 10%;
     padding: 10px 15px;
@@ -24,3 +11,58 @@
     color: #fafafa;
 
   }
+
+  .boton3 {
+  
+    margin-bottom: 2rem;
+    background-color: #AFACBE; 
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    color: #fafafa;
+    padding: 10px 30px;
+    align-self: center;
+    
+  }.tarjetita:hover .boton3 {
+    background-color: #C5AB9B;
+    color: white;
+    transition: ease-in;
+ }
+
+ .boton4 {
+ 
+  margin-bottom: 2rem;
+  background-color:$mainColor ; 
+  border-radius: 20px;
+  font-size: 1rem;
+  border: none;
+  color: #fafafa;
+  padding: 5px 30px;
+  align-self: center;
+
+ }
+
+ .boton4:hover {
+  background-color:#AFACBE ; 
+ }
+
+
+
+ .botonprincipal {
+  margin-bottom: 2rem;
+  background-color: $mainColor; 
+  border-radius: 20px;
+  font-size: 1rem;
+  border: none;
+  color: #fafafa;
+  padding: 10px 50px;
+  align-self: center;
+  transition: all 0.3s ease;
+ }
+
+ .botonprincipal:hover {
+  box-shadow: 0 0 5px $mainColor,
+  0 0 20px $mainColor,
+  0 0 60px $mainColor,
+  0 0 100px $mainColor;
+ }
