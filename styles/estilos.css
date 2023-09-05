@@ -123,15 +123,8 @@ main {
   display: flex;
   gap: 2rem;
   padding: 2rem;
-  /*margin-right: 3rem;
-  margin-left: 3rem;*/
   margin-left: 3rem;
   margin-right: 3rem;
-}
-.tarjetas .textotarjeta {
-  color: #C5AB9B;
-  padding: 10px;
-  flex-basis: 100%;
 }
 .tarjetas .tarjetita {
   background-color: white;
@@ -145,14 +138,6 @@ main {
   border-radius: 30px;
   transition: all 400ms ease;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-.tarjetas h2 {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #C5AB9B;
-  flex-basis: 100%;
 }
 .tarjetas .infomacioncard {
   padding: 20px 20px 20px 20px;
@@ -170,49 +155,6 @@ main {
   transform: translateY(-3%);
 }
 
-/* ACA EMPIEZA CLASES*/
-.tarjetas2 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  display: flex;
-  gap: 30px;
-}
-
-.tarjetita2 {
-  width: 250px;
-  background-color: #909f83;
-  border-radius: 30px;
-  overflow: hidden;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 5px;
-  flex-basis: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.textotarjeta2 {
-  padding: 20px;
-  flex-basis: 100%;
-  color: white;
-  margin: 0%;
-}
-
-.tarjetita2img {
-  width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-top: 2rem;
-  max-width: 100%;
-}
-
-.estilo {
-  color: white;
-  margin: 0%;
-  margin-top: 1rem;
-}
-
 tr {
   background-color: #AFACBE;
   color: white;
@@ -224,27 +166,14 @@ tr {
   color: black;
 }
 
-.tarjetota {
+/*titulos y textos*/
+h2 {
+  margin-top: 1rem;
   display: flex;
-  margin-top: 5rem;
-  gap: 2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.tarjetotita {
-  background-color: #909f83;
-  border-radius: 30px;
-  overflow: hidden;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 3px;
-  margin-bottom: 100px;
-}
-
-.tarjetotitaimg {
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #C5AB9B;
+  flex-basis: 100%;
 }
 
 h3 {
@@ -255,6 +184,27 @@ h3 {
 
 p {
   margin: 0%;
+}
+
+.textotarjeta {
+  color: #C5AB9B;
+  padding: 10px;
+  flex-basis: 100%;
+}
+
+/*acá empieza CONOCENOS*/
+.imgquienes {
+  max-width: 100%;
+}
+
+.infinity {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.descripcioninstructor {
+  padding: 1rem;
+  color: #C5AB9B;
 }
 
 .boton2 {
@@ -269,7 +219,6 @@ p {
 }
 
 .boton3 {
-  margin-bottom: 2rem;
   background-color: #AFACBE;
   border-radius: 20px;
   font-size: 1rem;
@@ -279,13 +228,13 @@ p {
   align-self: center;
 }
 
-.tarjetita:hover .boton3 {
+.boton3:hover {
   background-color: #C5AB9B;
   color: white;
-  transition: ease-in;
 }
 
 .boton4 {
+  margin-top: 1rem;
   margin-bottom: 2rem;
   background-color: #C5AB9B;
   border-radius: 20px;
@@ -321,7 +270,6 @@ p {
   width: 100%;
   background-color: #fafafa;
   max-width: 100%;
-  /* justify-content: space-between;*/
 }
 .footer .red {
   padding: 5px;
@@ -396,146 +344,22 @@ p {
   background-color: #F3F3F3;
 }
 
-.forminsc {
-  background-color: #909f83;
-  width: auto;
-  border-radius: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 100px;
+.formularios {
   display: flex;
-  padding: 3rem;
-  flex-direction: column;
-}
-
-.mapa {
-  background-color: #909f83;
-  width: auto;
-  border-radius: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 100px;
-  display: flex;
-  padding: 3rem;
   flex-direction: column;
 }
 
 .formclase {
-  background-color: #909f83;
-  width: auto;
+  background-color: #fafafa;
   border-radius: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 100px;
-  display: flex;
-  padding: 3rem;
-  flex-direction: column;
-}
-
-.espacios {
-  display: flex;
-  flex-direction: column;
-}
-
-/*acá empieza CONOCENOS*/
-.equipo {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.texto {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  font-size: medium;
-  /*background-color:#909f83;*/
-  margin-right: 3rem;
-  margin-left: 3rem;
-  border-radius: 30px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
   padding: 2rem;
-  background-image: url(../../img/fondoquien.png);
 }
 
-.quienessomos {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+.form-check-label {
   color: #C5AB9B;
-  font-weight: 500;
-}
-
-.instructores {
-  display: grid;
-  background-color: #909f83;
-  border-radius: 30px;
-  width: 95%;
-  height: 150vh;
-  margin-right: 3rem;
-  margin-left: 3rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: " founder founder instructor1 instructor2" "founder founder instructor3 instructor4";
-}
-
-.founder {
-  grid-area: founder;
-  border-color: #fafafa;
-  border: white 0.5px solid;
-  border-radius: 30px 0px 0px 30px;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.instructor1 {
-  border: white 0.5px solid;
-  grid-area: instructor1;
-}
-
-.instructor2 {
-  border: white 0.5px solid;
-  border-radius: 0px 30px 0px 0px;
-  grid-area: instructor2;
-}
-
-.instructor3 {
-  border: white 0.5px solid;
-  grid-area: instructor3;
-}
-
-.instructor4 {
-  border: white 0.5px solid;
-  grid-area: instructor4;
-  border-radius: 0px 0px 30px 0px;
-}
-
-.fotoinstructor {
-  max-width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  flex: 1;
-  height: auto;
-  display: block;
-}
-
-.fotofounder {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  flex: 1;
-}
-
-.descripcioninstructor {
-  text-align: center;
-  padding: 1rem;
-  gap: 3rem;
-  color: white;
-}
-
-.instructores > div {
-  display: grid;
-  place-items: center;
 }
 
 .table > :not(caption) > * > * {
@@ -556,8 +380,9 @@ p {
   background-color: antiquewhite;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
 }
 
 .header-calendar {
@@ -597,10 +422,6 @@ p {
   border-right: none;
 }
 
-/*.dia:nth-of-type(n + 1):nth-of-type(-n + 7){
-    background-color: aqua;
-    grid-row: 2;
-}*/
 .dia-disable {
   background-color: gainsboro;
 }
@@ -631,7 +452,7 @@ p {
   grid-row: 5;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   main {
     background-color: white;
   }
@@ -639,21 +460,17 @@ p {
     display: flex;
     background-color: #DAE2D2;
   }
+  .tarjetas {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0px;
+    margin-top: 1rem;
+  }
   .tarjetita {
     height: 300px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
     flex-basis: 100%;
-  }
-  .textotarjeta {
-    color: white;
-    flex-basis: 100%;
-  }
-  .tarjetas {
-    flex-direction: column;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding: 0px;
-    margin-top: 1rem;
   }
   h3 {
     flex-basis: 100%;
@@ -663,7 +480,7 @@ p {
     font-size: small;
   }
   .titulos {
-    color: #909f83;
+    color: #C5AB9B;
   }
   .section1 {
     display: none;
@@ -675,6 +492,7 @@ p {
   }
   .imglogo {
     display: block;
+    max-width: 70%;
   }
   .barranav {
     position: absolute;
@@ -714,43 +532,12 @@ p {
   .table-responsive {
     margin-left: 2rem;
   }
-  .tarjetas2 {
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-  .tarjetota {
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .tarjetita2 {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .tarjetotita {
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
   .sectionespacio {
     flex-direction: column;
     flex-basis: 100px;
     display: flex;
   }
-  .forminsc {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
   .formclase {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .mapa {
     flex-direction: column;
     flex-basis: 100px;
     display: flex;
@@ -759,6 +546,8 @@ p {
   /*footer*/
   .footer {
     display: grid;
+    margin-left: 2rem;
+    /*margin-right: 1rem;*/
   }
   .grupo1 {
     width: 90%;
@@ -782,17 +571,26 @@ p {
   }
   /*conocenos*/
   .texto {
-    background-color: #fafafa;
+    display: flex;
+    background-color: #AFACBE;
     background-image: none;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    padding: 1rem;
   }
   .quienessomos {
-    color: #909f83;
+    color: fafafa;
+  }
+  .imgquienes {
+    max-width: 100%;
+    border-radius: 18px;
   }
   .instructores {
     display: flex;
     flex-direction: column;
     height: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .fotofounder {
     border-radius: 30px 30px 0px 0px;

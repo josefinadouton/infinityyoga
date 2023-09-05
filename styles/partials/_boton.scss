@@ -14,7 +14,6 @@
 
   .boton3 {
   
-    margin-bottom: 2rem;
     background-color: #AFACBE; 
     border-radius: 20px;
     font-size: 1rem;
@@ -23,14 +22,14 @@
     padding: 10px 30px;
     align-self: center;
     
-  }.tarjetita:hover .boton3 {
+  }
+  .boton3:hover {
     background-color: #C5AB9B;
     color: white;
-    transition: ease-in;
  }
 
  .boton4 {
- 
+ margin-top: 1rem;
   margin-bottom: 2rem;
   background-color:$mainColor ; 
   border-radius: 20px;

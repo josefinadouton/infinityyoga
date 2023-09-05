@@ -7,15 +7,8 @@
     display: flex;
     gap: 2rem; 
     padding: 2rem;
-    /*margin-right: 3rem;
-    margin-left: 3rem;*/
     @include centrado(3rem,3rem);
 
- .textotarjeta {
-  color: #C5AB9B;
-  padding: 10px;
-  flex-basis: 100%;
- } 
  
  .tarjetita { 
 background-color: white;
@@ -31,17 +24,6 @@ flex-basis: 100%;
  box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
 
  } 
-
- 
-
-   h2 {
-margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #C5AB9B;
-    flex-basis:100%;
-   }
 
    .infomacioncard{
     padding: 20px 20px 20px 20px;
@@ -59,50 +41,7 @@ margin-top: 1rem;
   transform: translateY(-3%);
 }
 
-   /* ACA EMPIEZA CLASES*/
 
-
-.tarjetas2 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    display: flex;
-    gap: 30px;
-  }
-  
-    .tarjetita2 {
-      width: 250px;
-      background-color: #909f83;
-      border-radius: 30px;
-      overflow: hidden;
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      gap: 5px;
-      flex-basis: 100%;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .textotarjeta2 {
-    padding: 20px;
-    flex-basis: 100%;
-    color: white;
-    margin: 0%;
-    }
-  
-      .tarjetita2img { 
-     width: 200px;
-     object-fit: cover;
-      margin-top: 2rem;
-      max-width: 100%;
-     }
-     
-  .estilo{
-     color: white;
-     margin: 0%;
-     margin-top: 1rem;
-  }
-  
   tr  {
     background-color: #AFACBE;
     color: white;
@@ -113,38 +52,46 @@ margin-top: 1rem;
     color: black;
    }
   
-   .tarjetota {
-    display: flex;
-    margin-top: 5rem;
-   gap: 2rem;
-   @include centrado(3rem,3rem);
-   }
-  
-   .tarjetotita {
-    background-color: #909f83;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 3px;
-    margin-bottom: 100px;
+   /*titulos y textos*/
 
+h2 {
+margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C5AB9B;
+    flex-basis:100%;
    }
-  
-  .tarjetotitaimg {
-    max-width: 100%;
-  }
 
   h3 {
     text-align: center;
     color: $mainColor;
     padding-top: 1rem;
   }
+
   p {
     margin: 0%;
   }
 
+.textotarjeta {
+  color: #C5AB9B;
+  padding: 10px;
+  flex-basis: 100%;
+ } 
 
+  /*acá empieza CONOCENOS*/
+
+.imgquienes {
+  max-width: 100%;
+}
+   .infinity {
+    font-size: 2rem;
+    padding: 2rem;
+   }
+
+.descripcioninstructor {
+    padding: 1rem;
+    color: $mainColor;
+  }
 
   

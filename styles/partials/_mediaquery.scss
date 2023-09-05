@@ -1,33 +1,31 @@
-@media screen and (max-width:550px) {
+/*@media screen and (max-width:768px) {
     main { background-color: white;
     }
     .header { 
       display: flex;
       background-color: #DAE2D2;
     }
-   
-    .tarjetita 
-    { 
-       height: 300px;
-      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-    flex-basis: 100%;}
-    .textotarjeta { color: white;
-    flex-basis: 100%;}
-    .tarjetas { flex-direction: column;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
+     .tarjetas { flex-direction: column;
+      margin-left: 2rem;
+      margin-right: 2rem;
     padding: 0px;
   margin-top: 1rem;}
+    .tarjetita 
+    { height: 300px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    flex-basis: 100%;}
+  
     h3 { flex-basis: 100%;
     color: $mainColor;}
     .textoprincipal { font-size: small;}
-    .titulos { color: #909f83;}
+    .titulos { color:$mainColor;}
     .section1 { display: none;}
     .section2 {display: flex;
     flex-direction: column;
   position: relative;
   }
   .imglogo {display: block;
+    max-width: 70%;
 }
   
     .barranav { position: absolute;
@@ -62,7 +60,6 @@
   font-size: 2rem;}
   
   .abrir-menu { display: block;
-  
   border: 0;
   margin-right: 2rem;
   font-size: 2rem; }
@@ -72,56 +69,23 @@
   .table-responsive {
     margin-left: 2rem;
   }
-  
-  .tarjetas2 {
-    flex-basis: 100%;
-    flex-direction: column;
-  }
-  
-  .tarjetota {
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  
-  }
-  .tarjetita2 { 
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
-  .tarjetotita { 
-    flex-basis: 100%;
-    flex-direction: column;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-   
-  } 
+
   .sectionespacio {
     flex-direction: column;
     flex-basis: 100px;
     display: flex;
   }
   
-  .forminsc {
-    flex-direction: column;
-    flex-basis: 100px;
-    display: flex;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-  }
   .formclase {
     flex-direction: column;
     flex-basis: 100px;
     display: flex;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
   }
-  .mapa {
-      flex-direction: column;
-      flex-basis: 100px;
-      display: flex;
-      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-   
-  }
   /*footer*/ 
-  .footer {display: grid;}
+  .footer {display: grid;
+  margin-left: 2rem;
+/*margin-right: 1rem;*/}
   .grupo1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -148,18 +112,27 @@
 
 /*conocenos*/ 
 .texto {
-  background-color: $colorwhite;
+  display: flex;
+  background-color:#AFACBE;
   background-image: none;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-
+  flex-direction: column;
+  padding: 1rem;
+  
 }
 .quienessomos {
-  color: #909f83;
+  color: fafafa;
+}
+.imgquienes{
+  max-width: 100%;
+  border-radius: 18px;
 }
 .instructores {
   display: flex;
   flex-direction: column;
   height: auto;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .fotofounder {
