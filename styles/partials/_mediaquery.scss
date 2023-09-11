@@ -1,4 +1,4 @@
-/*@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     main { background-color: white;
     }
     .header { 
@@ -14,7 +14,9 @@
     { height: 300px;
       box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
     flex-basis: 100%;}
-  
+  .infinity {
+    font-size: medium;
+  }
     h3 { flex-basis: 100%;
     color: $mainColor;}
     .textoprincipal { font-size: small;}
@@ -81,16 +83,18 @@
     flex-basis: 100px;
     display: flex;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   /*footer*/ 
   .footer {display: grid;
-  margin-left: 2rem;
-/*margin-right: 1rem;*/}
+ }
   .grupo1 {
-    width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap:30px;
     padding: 35px 0px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
    .footer .imglogofooter {
     display: none;
@@ -127,19 +131,37 @@
   max-width: 100%;
   border-radius: 18px;
 }
-.instructores {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
 
-.fotofounder {
- border-radius: 30px  30px 0px 0px;
-}
+
 .equipo {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.tarjetasflip {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+.flip-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.tarjeta-2 {
+background-position: top;
+object-fit: cover;
+}
+.tarjeta-3 {
+  background-position: top;
+  object-fit: cover;
+  }
+  .tarjeta-4 {
+    background-position: top;
+    object-fit: cover;
+    }
 }
