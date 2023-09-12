@@ -1,5 +1,6 @@
 @media screen and (max-width:768px) {
     main { background-color: white;
+      padding-bottom: 3rem;
     }
     .header { 
       display: flex;
@@ -71,7 +72,9 @@
   .table-responsive {
     margin-left: 2rem;
   }
-
+  .tabla-horarios {
+    overflow-x: scroll;
+}
   .sectionespacio {
     flex-direction: column;
     flex-basis: 100px;

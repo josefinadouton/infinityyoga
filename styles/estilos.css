@@ -269,30 +269,30 @@ p {
 }
 
 .tarjeta-1 {
-  background-image: url(../../img/founder.png);
+  background-image: url(../img/founder.png);
 }
 
 .tarjeta-2 {
-  background-image: url(../../img/instructor1.png);
+  background-image: url(../img/instructor1.png);
 }
 
 .tarjeta-3 {
-  background-image: url(../../img/instructor3.png);
+  background-image: url(../img/instructor3.png);
 }
 
 .tarjeta-4 {
-  background-image: url(../../img/instructor6.png);
+  background-image: url(../img/instructor6.png);
 }
 
 .tarjeta-5 {
-  background-image: url(../../img/instructor4.png);
+  background-image: url(../img/instructor4.png);
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .tarjeta-6 {
-  background-image: url(../../img/instructor5.png);
+  background-image: url(../img/instructor5.png);
   background-position: top;
   -o-object-fit: cover;
      object-fit: cover;
@@ -473,9 +473,6 @@ p {
   margin-left: 8rem;
 }
 
-/*.tabla-horarios {
-    overflow-x: scroll;
-}*/
 .calendar-contenedor {
   background-color: antiquewhite;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
@@ -556,6 +553,7 @@ p {
 @media screen and (max-width: 768px) {
   main {
     background-color: white;
+    padding-bottom: 3rem;
   }
   .header {
     display: flex;
@@ -635,6 +633,9 @@ p {
   /*clases*/
   .table-responsive {
     margin-left: 2rem;
+  }
+  .tabla-horarios {
+    overflow-x: scroll;
   }
   .sectionespacio {
     flex-direction: column;
